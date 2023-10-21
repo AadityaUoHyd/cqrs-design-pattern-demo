@@ -7,7 +7,7 @@ this query and crud operations will be also is going to be un-manageable situati
 So reading and writing database has different approaches that we can define different strategy to handle that operation. In order to that
 CQRS offers to use “separation of concerns” principles and separate reading database and the writing database with 2 database. By this way we can
 even use different database for reading and writing database types like using no-sql for reading and using relational database for crud operations.<br><br>
-We can also scale Query Responsibility based services which have reading capability(with HTTP GET) and usually have more load comparatively,
+With CQRS, We can individually scale Query Responsibility based services in microservices, which have reading capability(with HTTP GET) and usually have more load comparatively,
 than Command Responsibility based services which have writing capability(with HTTP POST, PUT and DELETE).
 
 - create product event :
